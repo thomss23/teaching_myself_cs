@@ -28,6 +28,18 @@ def encode(value):
         
     return bytes(ba)
         
+# Follow these steps for each byte.
+# Start with an empty result and bit position:
+# Read the next byte.
+# Extract its lowest 7 payload bits.
+# Move that payload into its correct position.
+# The first payload moves left by 0:
+# 0010110 << 0
+# The second payload moves left by 7:
+# 0000001 << 7
+# A third would move left by 14, then 21, and so on.
+# Combine the positioned payload with result.
+# Inspect the byte’s highest bit. Is byte & continuation_mask zero?
 
 def decode(encoded):
     # varint bytes -> uint64 integer
