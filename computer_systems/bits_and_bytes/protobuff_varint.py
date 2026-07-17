@@ -1,13 +1,3 @@
-with open("computer_systems/1.uint64", "rb") as file:
-    data = file.read()
-
-print(data)
-
-number = int.from_bytes(data)
-
-print(number)
-
-
 def encode(value):
     ba = bytearray()
     mask = 127
