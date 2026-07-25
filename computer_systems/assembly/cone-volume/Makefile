@@ -1,6 +1,6 @@
 AS = nasm
 
-CFLAGS = -g -Wall -arch x86_64
+CFLAGS = -g -Wall 
 
 ifeq ($(shell uname -s),Darwin)
 	ASFLAGS = -g -f macho64 --prefix _
