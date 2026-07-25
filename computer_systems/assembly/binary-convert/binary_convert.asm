@@ -15,5 +15,3 @@ mov eax, 0
 .loop_end:
 	ret
 
-; instructor solution
-
