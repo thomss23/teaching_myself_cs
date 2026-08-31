@@ -1,0 +1,5 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/ey30yw/LearningProjects/teaching_myself_cs/operating_systems/basic_shell/shell_with_pipes'
+relocations:     []
+...
