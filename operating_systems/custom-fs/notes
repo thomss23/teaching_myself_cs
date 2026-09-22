@@ -1,0 +1,8 @@
+ORDER		FAMILY		Species
+
+Accipitriformes/"Accipitridae (Hawks, Eagles, and Kites)/{"Pearl Kite", "peakit1}
+Accipitriformes/Pandionidae/Osprey
+
+Bucerotiformes
+
+gcc -Wall -Wextra birds_fs_starter.c $(pkg-config fuse3 --cflags --libs) -o birds_fs
