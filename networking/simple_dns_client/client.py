@@ -17,6 +17,7 @@ header = struct.pack(
     0,       # additional records
 )
 
+
 domain_name = "wikipedia.com"
 
 labels = domain_name.split(".")
